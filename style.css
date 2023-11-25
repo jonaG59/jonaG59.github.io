@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 100px;
+    background:#4D4D5C;
+    padding: 0 50px;
+    color: #fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    text-transform: uppercase;
+    color: #037BC0;
+    font-weight: 200;
+
+}
+.menu a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+.mostrar-menu, .esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition:0.4s;
+}
+.mostrar-menu{
+    order:1;
+}
+.menu a:hover,.mostrar-menu:hover,.esconder-menu{
+color: #6cc091;
+}
+#check{
+    display: none;
+}
+ .hero{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-image: url(imag/principal.jpg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+ }
+h2{
+    text-align: center;
+}
+.prod{
+    width: 100%;
+    display: flex;
+
+}
+.div1 img{
+    width: 100%;
+    max-width: 1200px;
+    min-width: 300px;
+    margin: 0px 20px 0px 20px ;
+}
+.div2{
+    background-color: #037BC0;
+    width: 50%;
+    margin: 0px 20px 0px 20px;
+}
+.div2  p{
+    text-align: center;
+}
+.div2 button{
+    display: flex;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+.card{
+    width:35%;
+    display: flex;
+    margin: 20px 40px;
+    flex-direction: row;
+}
+.card-group{
+    width: auto;
+    display: flex;
+    margin: 20px 40px;
+    text-align: center;
+}
+.card1{
+    width: 33%;
+}
+.card2{
+    width: 33%;
+}
+.card3{
+    width: 33%;
+}
+.card-c{
+    width:100%;
+    display: flex;
+    margin: 20px 40px;
+    justify-content: center;
+    text-align: center;
+}
+.card-k1{
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+.card-b{
+    width:33%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.card-d{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+footer{
+    background-color: rgba(150, 150, 150);
+    display: flex;
+    justify-content: center;
+}
+footer .container{
+    flex-direction: column;
+    text-align: center;
+
+}
+footer p{
+    margin: 2px;
+    color: rgba(100, 100, 100);
+}
+@media(max-width:760px){
+    .mostrar-menu, .esconder-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width:100%;
+        height: 100vh;
+        background: #4D4D5C;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+
+    }
+    .prod{
+        flex-direction: column;
+        align-items: center;
+    }
+    .div2{
+        display: flex;
+        width: 100%;
+
+    }
+    .card{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .card-group{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .card1{
+        width: 100%;
+    }
+    .card2{
+        width: 100%;
+    }
+    .card3{
+        width: 100%;
+    }
+    .card-c{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .card-k1{
+        width: 100%;
+    }
+    .card-b3{
+        width: 100%;
+    }
+    .card-d3{
+        width: 100%;
+    }
+    
+    
+}    
